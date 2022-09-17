@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'slogan';
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family:'bold' ;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family:'regular' ;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+#header{
+   /* background-color: #d5b8ff;
+   stackoverflow*/
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+    background: linear-gradient(to right, #d5b8ff, #663399);
+}
+
+#header h1{
+    font-family: 'slogan';
+    font-size: 350%;
+    margin: 0;
+    text-shadow: 3px 3px #555;
+}
+
+#container{
+    display: flex;
+
+}
+#menu{
+    width: 15%;
+    background-color: #d5b8ff;
+    padding: 20px;
+
+}
+
+#menu span{
+    font-family: 'bold';
+    font-size: 130%;
+    text-shadow: 2px 2px #555;
+}
+#menu ul{
+    padding-left: 0;
+    list-style: none;
+    font-family: 'regular';
+    font-size: 120%;
+}
+#menu li{
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+#menu li:hover{
+    color:#663399;
+    font-size:105%;
+}
+#content{
+    width: 85%;
+    padding: 20px;
+}
+
+#content h1{
+    font-family: 'bold';
+}
+#content img{
+    width: 33%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #555;
+}
+#content p{
+    font-family: 'regular';
+    font-size: 150%
+}
+
+#footer{
+    padding: 50px 20px 30px 20px;
+    background-color: #24252a;
+}
+
+#footer span{
+    font-family: 'bold';
+    color: white;
+}
+
+/*Regras para dispositivos móveis  Max 600px*/
+
+@media screen and (max-width: 600px){
+    body{
+    background-color: #24252a;
+
+    }
+    #header{
+        padding: 10px 0;
+    }
+    #header h1{
+        font-size: 200%;
+    }
+    
+    #container{
+        flex-direction: column;
+        background-color: white;
+    }
+    #menu, #content{
+        width: 100%;
+    }
+    #menu{
+        padding: 8px 0;
+    }
+    #menu span{
+        display: none;
+    }
+    #menu ul{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #menu li{
+        margin: 0 20px;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #content h1{
+        font-size: 140%;
+    }
+    #content p{
+        padding-top: 60px;
+        margin: 0;
+        font-size: 130%;
+    }
+    #content img{
+        width: 90%;
+    }
+    #footer{
+        padding: 20px 0;
+        text-align: center;
+    }
+    #footer span{
+        font-size: 90%;
+
+    }
+}
